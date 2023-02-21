@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <!-- Adding favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.icon"> 
+  <!-- linking awesome font for icons -->
+  <script src="https://kit.fontawesome.com/28210dc1b0.js" crossorigin="anonymous"></script>
+  <!-- Link to css file -->
+  <link rel="stylesheet" type="text/css" href="todo1.css">
+   <!--Link to the javaScript file  -->
+   <script type="text/javaScript" src="todo.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1> Todo List </h1>
+    </div>
+    <div class="input-div">
+      <!-- notes icon from awesome font -->
+       <i class="far fa-file-alt"></i>
+      <!-- Input box for to do's -->
+      <input type="text" placeholder="Today's Todo" id="input">
+      <!-- add button -->
+      <button type="submit" ><i class="fa-solid fa-circle-plus add"></i></button>
+      
+    </div>
+    <div class="completed-div">
+      <!-- completed task -->
+      <!-- tick icon -->
+      <div class="completed-left-div">
+        <i class="fa-solid fa-check-double tick" style="font-size: 15px;"></i>
+        <span class="completedAll">Complete all tasks</span>
+      </div>
+      
+      <p class="uncompleted All">Clear Completed</p>
+    </div>
+    <hr>
+    <div class="list_item">
+      <ul id="list">
+      </ul>
+    </div>
+    <hr>
+    <div id="end">
+      <div id="task">
+        <p><span id="total_task">0</span> tasks left</p>
+      </div>
+      <div id="end-right">
+      
+        <p class="deleteAll">Delete All</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
